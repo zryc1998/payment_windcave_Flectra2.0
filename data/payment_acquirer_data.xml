@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<flectra>
+    <data noupdate="1">
+        <record id="payment_acquirer_windcave" model="payment.acquirer">
+            <field name="name">Windcave</field>
+            <field name="image_128" type="base64" file="payment_windcave/static/src/img/windcave_icon.png"/>
+            <field name="provider">windcave</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="view_template_id" ref="windcave_form"/>
+            <field name="description" type="html">
+            <p>
+                Accept payments with Windcave.
+            </p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-check"/>Online Payment</li>
+                <li class="list-inline-item"><i class="fa fa-check"/>Payment Status Tracking</li>
+                <li class="list-inline-item"><i class="fa fa-check"/>Save Cards</li>
+                <li class="list-inline-item"><i class="fa fa-check"/>Manual Capture</li>
+            </ul>
+        </field>
+        </record>
+    </data>
+</flectra>
